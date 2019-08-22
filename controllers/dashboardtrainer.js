@@ -15,12 +15,16 @@ const dashboardtrainer = {
         //const loggedInMember = accounts.getCurrentMember(request);
         const member = memberStore.getMemberById(request.params.id);
         const assessments = assessmentStore.getMemberAssessments(member.id);
+        const assessmentcount =  "hello there"
+            //assessments.length;
 
         const viewData = {
 
             title: "Trainer Dashboard",
             member: member,
             memberassessments: assessments,
+            assessmentcount: assessmentcount
+            //assessmentcount: 0
 
         };
 
@@ -30,22 +34,22 @@ const dashboardtrainer = {
 
     addAssessmentComment (request, response)
 {
+    logger.info(request.params.id);
 
-    //const member = memberStore.getMemberById(request.params.id);
-
-    const assessmentId = request.body.assessmentid;
-    //const assessmentId = request.body.assessmentid;
-
-
-    logger.info("Hello:" + assessmentId);
-    const assessment = assessmentStore.getAssessment(assessmentId);
-
-   // logger.info(request.body.comments);
+    const assessment = assessmentStore.getAssessment(request.params.id);
+    const newassessment = assessment;
+    const memberid = assessment.memberid;
+    const member =  memberStore.getMemberById(memberid);
     const comments = request.body.comments;
-   // logger.info(comments);
-    assessment.trainerComment = comments;
-    assessment.save();
-   const assessments = assessmentStore.getMemberAssessments(member.id);
+    logger.info(comments);
+
+    newassessment.trainerComment = comments;
+    logger.info(newassessment.trainerComment);
+
+    assessmentStore.removeAssessment(request.params.id);
+    assessmentStore.addAssessment(newassessment)
+
+    const assessments = assessmentStore.getMemberAssessments(memberid);
 
     const viewData = {
 

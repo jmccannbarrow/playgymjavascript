@@ -15,13 +15,12 @@ const dashboard = {
         const viewData = {
             title: "Member Dashboard",
             member: loggedInMember,
-            memberassessments: assessments
+            memberassessments: assessments,
+
         };
         //logger.info("about to render", index);
         response.render("dashboard", viewData);
     },
-
-
 
 
     deleteAssessment(request, response) {
@@ -76,14 +75,15 @@ const dashboard = {
         loggedInMember.bmicategory = bmicategory;
         loggedInMember.isidealbodyweight = isidealbodyweight ;
 
+        //increment the member count by one
+        const assessmentcount = loggedInMember.assessmentcount;
+        loggedInMember.assessmentcount = assessmentcount + 1;
+
 //Add the member back in
         memberCollection.addMember(loggedInMember);
 
         response.redirect("/dashboard/" );
     }  ,
-
-
-
 
 
 };

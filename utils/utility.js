@@ -26,7 +26,7 @@ const utility = {
         const BMI = (assessmentweight / (memberheight * memberheight));
 
         //return this.toTwoDecimalPlaces(BMI);
-        return (BMI * 100) / 100.0;
+        return (BMI * 100) /100.0;
 
 
     },

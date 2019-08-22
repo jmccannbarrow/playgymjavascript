@@ -30,7 +30,8 @@
       "id": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
       "bmi": 20,
       "bmicategory": "NORMAL",
-      "isidealbodyweight": true
+      "isidealbodyweight": true,
+      "assessmentcount": 4
     }
   ]
 }
