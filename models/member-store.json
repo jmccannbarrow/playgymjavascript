@@ -1,0 +1,36 @@
+{
+  "members": [
+    {
+      "firstname": "Homer ",
+      "lastname": "Simpson",
+      "gender": "Male",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "address": "Liverpool, UK",
+      "height": "1.2",
+      "startingweight": "175",
+      "BMI": 10,
+      "bmiCategory": "SEVERELY UNDERWEIGHT",
+      "id": "78cfef9f-a6db-4c6b-b514-a0c4b57c1b5f",
+      "bmi": 69.44444444444444,
+      "bmicategory": "SEVERELY OBESE",
+      "isidealbodyweight": false
+    },
+    {
+      "firstname": "John",
+      "lastname": "McCann",
+      "gender": "Male",
+      "email": "johnmccann02@yahoo.co.uk",
+      "password": "secret",
+      "address": "Barrow, Ardfert",
+      "height": "1.5",
+      "startingweight": "78.0",
+      "BMI": 78,
+      "bmiCategory": "SEVERELY OBESE",
+      "id": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
+      "bmi": 20,
+      "bmicategory": "NORMAL",
+      "isidealbodyweight": true
+    }
+  ]
+}

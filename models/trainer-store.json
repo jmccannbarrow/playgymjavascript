@@ -1,0 +1,16 @@
+{
+  "trainers": [
+
+    {
+      "firstname": "Marge",
+      "lastname": "Simpson",
+      "gender": "Female",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "address": "Springfield, Mass",
+      "height": "12",
+      "startingweight": "75.0",
+      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
+    }
+  ]
+}

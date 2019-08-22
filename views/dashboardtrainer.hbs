@@ -1,0 +1,141 @@
+{{> menutrainer id="dashboardtrainer"}}
+
+<section class="ui raised segment">
+
+    <div class="ui four column center aligned grid">
+
+
+
+        <div class="column">
+
+
+            <i class="huge user circle icon"></i>
+
+            <header class="ui header">
+                {{member.firstname}} {{member.lastname}}
+
+            </header>
+        </div>
+
+        <div class="column">
+
+
+            {{#if member.isidealbodyweight}}
+                <i class="huge green dashboard icon"></i>
+            {{else}}
+                <i class="huge huge red dashboard icon"></i>
+            {{/if}}
+
+
+            <header class="ui header">
+
+                Ideal Weight Indicator
+
+            </header>
+
+        </div>
+
+        <div class="column">
+
+            <i class=" huge heartbeat icon"></i>
+            <header class="ui header">
+                {{member.bmi}} </br>BMI
+            </header>
+        </div>
+
+
+        <div class="column">
+
+            <i class=" huge user md icon"></i>
+
+            <header class="ui header">
+                {{member.bmicategory}} </br>BMI Category
+            </header>
+        </div>
+    </div>
+
+
+
+    </div>
+    <div class="right item">
+        <div class="ui action input">
+
+        </div>
+    </div>
+    </div>
+
+
+
+</section>
+</div>
+</div>
+</div>
+
+<section class="ui raised segment">
+    <header class="ui header">
+        Assessment(s)
+    </header>
+    <table class="ui celled table">
+{{#each memberassessments}}
+        <thead>
+        <tr><th>Weight</th>
+            <th>Chest</th>
+            <th>Thigh</th>
+            <th>Upper Arm</th>
+            <th>Waist</th>
+            <th>Hips</th>
+            <th>Comments</th>
+
+        </tr>
+
+        </thead>
+
+
+
+            <tr>
+
+                <td><div class="ui item"> {{weight}} </div></td>
+                <td><div class="ui item"> {{chest}} </div></td>
+                <td><div class="ui item"> {{thigh}} </div></td>
+                <td><div class="ui item"> {{upperArm}} </div></td>
+                <td><div class="ui item"> {{waist}} </div></td>
+                <td><div class="ui item"> {{hips}} </div></td>
+                <td><div class="ui item"> {{comments}} </div></td>
+
+
+            </tr>
+
+            <tr>
+
+                <td colspan="8">
+
+                    <form class="ui stacked segment form" action="/dashboardtrainer/addassessmentcomment/{{id}}" method="POST">
+                        <table>
+
+                            <tr>
+                                <td colspan="8"> <label>Comments</label></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="8"> <div class="field">
+                                    <input name="comments">
+                                </div></td>
+                            </tr>
+                            <tr>
+                                <td colspan="8"> <button class="ui blue submit button">Update</button></td>
+                            </tr>
+
+                        </table>
+
+                    </form>
+                </td>
+            </tr>
+
+        {{/each}}
+    </table>
+
+</section>
+
+
+
+

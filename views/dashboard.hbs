@@ -1,0 +1,163 @@
+{{> menu id="dashboard"}}
+
+
+
+
+
+
+<section class="ui raised segment">
+
+    <div class="ui four column center aligned grid">
+
+
+
+        <div class="column">
+
+
+            <i class="huge user circle icon"></i>
+
+            <header class="ui header">
+                {{member.firstname}} {{member.lastname}}
+
+            </header>
+        </div>
+
+        <div class="column">
+
+
+            {{#if member.isidealbodyweight}}
+                <i class="huge green dashboard icon"></i>
+            {{else}}
+                <i class="huge huge red dashboard icon"></i>
+            {{/if}}
+
+
+            <header class="ui header">
+
+                Ideal Weight Indicator
+
+            </header>
+
+        </div>
+
+        <div class="column">
+
+            <i class=" huge heartbeat icon"></i>
+            <header class="ui header">
+                {{member.bmi}} </br>BMI
+            </header>
+        </div>
+
+
+        <div class="column">
+
+            <i class=" huge user md icon"></i>
+
+            <header class="ui header">
+                {{member.bmicategory}} </br>BMI Category
+            </header>
+        </div>
+    </div>
+
+
+
+    </div>
+    <div class="right item">
+        <div class="ui action input">
+
+        </div>
+    </div>
+    </div>
+
+
+    <form class="ui stacked segment form" action="/dashboard/addassessment/ " method="POST">
+
+        <div class=" three fields">
+            <div class="field">
+
+                <label>Weight</label>
+                <input placeholder="00.00kg" type="text" name="weight"></div>
+            <div class="field">
+                <label>Chest</label>
+                <input placeholder="Chest" type="text" name="chest"></div>
+            <div class="field">
+                <label>Thigh</label>
+                <input placeholder="Thigh" type="text" name="thigh"></div></div>
+
+        <div class=" three fields">
+            <div class="field">
+                <label>Upper Arm</label>
+
+                <input placeholder="upperArm" type="text" name="upperArm"></div>
+            <div class="field">
+                <label>Waist</label>
+                <input placeholder="Waist" type="text" name="waist"></div>
+            <div class="field">
+                <label>Hips</label>
+                <input placeholder="Hips" type="text" name="hips"></div>
+
+
+
+        </div>
+        </div>
+        </div>
+        <button class="ui blue submit button">Submit</button>
+        <div class="field">
+
+    </form>
+</section>
+</div>
+</div>
+</div>
+
+<section class="ui raised segment">
+    <header class="ui header">
+        Assessment(s)
+    </header>
+    <table class="ui celled table">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Chest</th>
+            <th>Thigh</th>
+            <th>Upper Arm</th>
+            <th>Waist</th>
+            <th>Hips</th>
+            <th>Comments</th>
+
+        </tr>
+
+        </thead>
+        {{#each memberassessments}}
+
+
+            <tr>
+
+                <td><div class="ui item"> {{date}} </div></td>
+                <td><div class="ui item"> {{weight}} </div></td>
+                <td><div class="ui item"> {{chest}} </div></td>
+                <td><div class="ui item"> {{thigh}} </div></td>
+                <td><div class="ui item"> {{upperArm}} </div></td>
+                <td><div class="ui item"> {{waist}} </div></td>
+                <td><div class="ui item"> {{hips}} </div></td>
+                <td><div class="ui item"> {{comments}} </div></td>
+
+
+
+                <td><div class="ui item"><a href="/dashboard/deleteassessment/{{id}}" class="ui icon button"><i class="icon trash"></i>
+                </a>
+                </td>
+
+            </tr>
+
+
+        {{/each}}
+    </table>
+
+
+
+
+
+
+</section>
+
