@@ -43,7 +43,7 @@ const accounts = {
         const BMI = utils.toTwoDecimalPlaces(((member.startingweight) / (member.height) * (member.height)));
         member.BMI = BMI;
         member.bmiCategory = (utils.determineBMICategory((member.BMI)));
-
+        member.assessmentcount = 0;
         member.id = uuid();
         memberstore.addMember(member);
         logger.info(`registering ${member.email}`);
