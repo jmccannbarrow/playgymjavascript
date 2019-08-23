@@ -39,7 +39,7 @@ const accounts = {
 
     register(request, response) {
         const member = request.body;
-        logger.info(utils.test());
+
         const BMI = utils.toTwoDecimalPlaces(((member.startingweight) / (member.height) * (member.height)));
         member.BMI = BMI;
         member.bmiCategory = (utils.determineBMICategory((member.BMI)));

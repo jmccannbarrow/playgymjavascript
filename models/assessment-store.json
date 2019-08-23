@@ -71,6 +71,42 @@
       "hips": "34",
       "date": "8/22/2019, 7:32:56 PM",
       "trainerComment": ""
+    },
+    {
+      "id": "8300f666-c202-4342-b894-fd1d83d3cae6",
+      "memberid": "3c172699-30c2-40c8-976e-0024f26e9afc",
+      "weight": "34",
+      "chest": "34",
+      "thigh": "23",
+      "upperArm": "23",
+      "waist": "23",
+      "hips": "23",
+      "date": "8/23/2019, 10:15:15 AM",
+      "trainerComment": ""
+    },
+    {
+      "id": "11f8c114-a772-4db2-be5f-75510f1fcb39",
+      "memberid": "3c172699-30c2-40c8-976e-0024f26e9afc",
+      "weight": "55",
+      "chest": "34",
+      "thigh": "45",
+      "upperArm": "12",
+      "waist": "23",
+      "hips": "23",
+      "date": "8/23/2019, 10:16:33 AM",
+      "trainerComment": ""
+    },
+    {
+      "id": "32cbcf65-b851-4604-91ac-497da56599f5",
+      "memberid": "78cfef9f-a6db-4c6b-b514-a0c4b57c1b5f",
+      "weight": "55",
+      "chest": "34",
+      "thigh": "23",
+      "upperArm": "23",
+      "waist": "23",
+      "hips": "34",
+      "date": "8/23/2019, 10:01:55 AM",
+      "trainerComment": "great weight loss "
     }
   ]
 }

@@ -5,9 +5,7 @@
 
 const utility = {
 
-    test(){
-        return "Hello World";
-    },
+
 
     toTwoDecimalPlaces(num){
 

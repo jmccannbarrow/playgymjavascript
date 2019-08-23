@@ -23,15 +23,16 @@ const assessment = {
         const assessmentId = request.params.id;
 
 
+
+        logger.info('In deleteAssessment');
+
+
         logger.info('Assessmentid = ' + assessmentId);
         const assessment = assessmentStore.getAssessment(assessmentId);
-
+        //const assessment = assessmentStore.getAssessment(id.assessmentId);
         logger.debug(`Deleting Assessment ${assessmentId}`);
         assessmentStore.removeAssessment(assessmentId);
         response.redirect("/dashboard");
-
-
-
 
 
 
@@ -50,7 +51,8 @@ const assessment = {
             upperArm: request.body.upperArm,
             waist: request.body.waist,
             hips: request.body.hips,
-            date: new Date().toLocaleString('en-GB')
+            date: new Date().toLocaleString('en-GB'),
+            trainerComment: ""
         };
 
 //Add the assessment
@@ -69,12 +71,15 @@ const assessment = {
         loggedInMember.bmicategory = bmicategory;
         loggedInMember.isidealbodyweight = isidealbodyweight ;
 
+        //increment the member count by one
+        const assessmentcount = loggedInMember.assessmentcount;
+        loggedInMember.assessmentcount = assessmentcount + 1;
+
 //Add the member back in
         memberCollection.addMember(loggedInMember);
 
         response.redirect("/dashboard/" );
     }  ,
-
 
 
 

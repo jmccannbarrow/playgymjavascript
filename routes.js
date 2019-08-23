@@ -24,7 +24,6 @@ router.get('/settings', accounts.settings);
 router.post('/updateMember', accounts.updateMember);
 
 
-
 router.get('/dashboard', dashboard.index);
 router.get('/dashboard/deleteassessment/:id', dashboard.deleteAssessment);
 router.post('/dashboard/addassessment', dashboard.addAssessment);
@@ -32,14 +31,9 @@ router.get('/dashboardtrainer/:id', dashboardtrainer.index);
 router.post('/dashboardtrainer/addassessmentcomment/:id', dashboardtrainer.addAssessmentComment);
 
 
-//router.get('/dashboardtrainerassessments/', dashboardtrainer.dashboardTrainerAssessments);
-
-
-//router.get('dashboard/:id', dashboard.index);
 
 router.get('/about', about.index);
 router.get('/admin', admin.index);
-//router.get('/assessment/:id', assessment.index);
 
 
 
