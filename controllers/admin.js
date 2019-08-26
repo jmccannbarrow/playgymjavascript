@@ -32,14 +32,20 @@ const admin = {
 
     },
 
-    deleteMember(request, repsonse){
+    deleteMember(request, response){
 
         const member = memberStore.getMemberById(request.params.id);
-        if (member.assessmentcount = 0) {
+        logger.info(member.id);
 
-            memberStore.removeMember(request.params.id);
-            memberStore.save();
+        const assessmentcount = member.assessmentcount;
+
+
+        if (assessmentcount == 0) {
+
+            memberStore.removeMember(member.id);
+
         }
+
 
         const members = memberStore.getAllMembers()
         const assessments =  assessmentStore.getMemberAssessments()

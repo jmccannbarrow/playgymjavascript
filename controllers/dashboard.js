@@ -26,24 +26,43 @@ const dashboard = {
     deleteAssessment(request, response) {
         const loggedInMember = accounts.getCurrentMember(request);
         const assessmentId = request.params.id;
-
-
-
-        logger.info('In deleteAssessment');
-
-
-        logger.info('Assessmentid = ' + assessmentId);
-        const assessment = assessmentStore.getAssessment(assessmentId);
-        //const assessment = assessmentStore.getAssessment(id.assessmentId);
-        logger.debug(`Deleting Assessment ${assessmentId}`);
         assessmentStore.removeAssessment(assessmentId);
-
-        //decrement the member count by one
-        const assessmentcount = loggedInMember.assessmentcount;
-        loggedInMember.assessmentcount = assessmentcount -1;
-
+        var assessments = [];
+        assessments = assessmentStore.getMemberAssessments(loggedInMember.id);
+        if (assessments.length > 0) {
+            const weight = assessments[assessments.length-1].weight;
+            logger.info(weight);
+            //Get the bmi stuff
+            const bmi = utils.calculateBMI(weight, loggedInMember.height);
+            const bmicategory = utils.determineBMICategory(bmi)
+            const isidealbodyweight = utils.isIdealBodyWeight(loggedInMember.height, loggedInMember.gender, weight)
+            //Get rid of the existing member
+            memberCollection.removeMember(loggedInMember.id);
+            //Add the bmi stuff to the saved member
+            loggedInMember.bmi = bmi;
+            loggedInMember.bmicategory = bmicategory;
+            loggedInMember.isidealbodyweight = isidealbodyweight ;
+            loggedInMember.assessmentcount = assessments.length;
+            //Add the member back in
+            memberCollection.addMember(loggedInMember);
+        }
+        else
+        {
+            //Get the bmi stuff
+            const bmi = utils.calculateBMI(loggedInMember.startingweight, loggedInMember.height);
+            const bmicategory = utils.determineBMICategory(bmi)
+            const isidealbodyweight = utils.isIdealBodyWeight(loggedInMember.height, loggedInMember.gender, loggedInMember.startingweight)
+            //Get rid of the existing member
+            memberCollection.removeMember(loggedInMember.id);
+            //Add the bmi stuff to the saved member
+            loggedInMember.bmi = bmi;
+            loggedInMember.bmicategory = bmicategory;
+            loggedInMember.isidealbodyweight = isidealbodyweight ;
+            loggedInMember.assessmentcount = 0;
+            //Add the member back in
+            memberCollection.addMember(loggedInMember);
+        }
         response.redirect("/dashboard");
-
 
 
     },

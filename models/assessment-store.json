@@ -1,88 +1,16 @@
 {
   "assessmentCollection": [
     {
-      "id": "7bbbb186-45d6-4de4-8cd1-1c3b236e38a6",
-      "memberid": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
-      "weight": "55",
-      "chest": "45",
-      "thigh": "23",
-      "upperArm": "23",
-      "waist": "23",
-      "hips": "23",
-      "date": "8/22/2019, 9:19:45 AM",
-      "trainerComment": ""
-    },
-    {
-      "id": "9fbe4ca6-66ab-472f-a8ea-f9969a196b7c",
-      "memberid": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
-      "weight": "45",
-      "chest": "34",
-      "thigh": "23",
-      "upperArm": "23",
-      "waist": "45",
-      "hips": "34",
-      "date": "8/22/2019, 9:19:55 AM",
-      "trainerComment": ""
-    },
-    {
-      "id": "17ded2bf-bd32-4350-a307-021df318a236",
-      "memberid": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
-      "weight": "45",
-      "chest": "34",
-      "thigh": "23",
-      "upperArm": "23",
-      "waist": "23",
-      "hips": "23",
-      "date": "8/22/2019, 11:15:32 AM",
-      "trainerComment": ""
-    },
-    {
-      "id": "d25f4ed9-3ebc-4f24-b04b-6064efa25688",
-      "memberid": "78cfef9f-a6db-4c6b-b514-a0c4b57c1b5f",
-      "weight": "100",
-      "chest": "34",
-      "thigh": "23",
-      "upperArm": "23",
-      "waist": "23",
-      "hips": "23",
-      "date": "8/22/2019, 9:18:48 AM",
-      "trainerComment": "come on"
-    },
-    {
-      "id": "d0b4a9c0-3cdc-4545-9241-4c3e81f13d40",
-      "memberid": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
-      "weight": "45",
-      "chest": "123",
-      "thigh": "100",
-      "upperArm": "34",
-      "waist": "100",
-      "hips": "34",
-      "date": "8/22/2019, 7:32:56 PM",
-      "trainerComment": ""
-    },
-    {
-      "id": "72d3496d-d45c-4dda-9890-7ce1556286f8",
+      "id": "001360ab-ff6e-4875-9e90-6ea0820ad28f",
       "memberid": "78cfef9f-a6db-4c6b-b514-a0c4b57c1b5f",
       "weight": "45",
       "chest": "45",
       "thigh": "34",
-      "upperArm": "23",
+      "upperArm": "34",
       "waist": "34",
       "hips": "34",
-      "date": "8/22/2019, 9:18:09 AM",
-      "trainerComment": "hi"
-    },
-    {
-      "id": "e3c0c893-9c67-4239-b5a3-17abc844c0c2",
-      "memberid": "3c172699-30c2-40c8-976e-0024f26e9afc",
-      "weight": "34",
-      "chest": "34",
-      "thigh": "23",
-      "upperArm": "23",
-      "waist": "23",
-      "hips": "23",
-      "date": "8/26/2019, 12:05:01 PM",
-      "trainerComment": "come on"
+      "date": "8/26/2019, 5:59:22 PM",
+      "trainerComment": ""
     }
   ]
 }

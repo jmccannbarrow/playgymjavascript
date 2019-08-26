@@ -15,7 +15,7 @@
       "bmi": 20,
       "bmicategory": "NORMAL",
       "isidealbodyweight": true,
-      "assessmentcount": 4
+      "assessmentcount": 0
     },
     {
       "firstname": "Homer ",
@@ -29,27 +29,10 @@
       "BMI": 10,
       "bmiCategory": "SEVERELY UNDERWEIGHT",
       "id": "78cfef9f-a6db-4c6b-b514-a0c4b57c1b5f",
-      "bmi": 38.19444444444444,
-      "bmicategory": "SEVERELY OBESE",
-      "isidealbodyweight": false,
-      "assessmentcount": 2
-    },
-    {
-      "firstname": "Bart",
-      "lastname": "Simpson",
-      "gender": "Male",
-      "email": "bart@simpson.com",
-      "password": "secret",
-      "address": "Springfield, Mass, Il",
-      "height": "75",
-      "startingweight": "76",
-      "BMI": 10,
-      "bmiCategory": "SEVERELY UNDERWEIGHT",
-      "assessmentcount": 1,
-      "id": "3c172699-30c2-40c8-976e-0024f26e9afc",
-      "bmi": 0.006044444444444444,
-      "bmicategory": "SEVERELY UNDERWEIGHT",
-      "isidealbodyweight": true
+      "bmi": 31.25,
+      "bmicategory": "MODERATELY OBESE",
+      "isidealbodyweight": true,
+      "assessmentcount": 1
     }
   ]
 }
