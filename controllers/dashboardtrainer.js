@@ -61,16 +61,7 @@ const dashboardtrainer = {
         response.render("dashboardtrainer", viewData);
 
     },
-    deleteMember(request, repsonse){
 
-    const member = memberStore.getMemberById(id);
-if (member.assessmentcount = 0) {
-
-    memberStore.removeMember(id);
-    memberStore.save();
-}
-response.render("dashboardtrainer");
-} ,
 
 };
 

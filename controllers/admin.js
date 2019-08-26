@@ -34,13 +34,26 @@ const admin = {
 
     deleteMember(request, repsonse){
 
-        const member = memberStore.getMemberById(id);
+        const member = memberStore.getMemberById(request.params.id);
         if (member.assessmentcount = 0) {
 
-            memberStore.removeMember(id);
+            memberStore.removeMember(request.params.id);
             memberStore.save();
         }
-        response.render("dashboardtrainer");
+
+        const members = memberStore.getAllMembers()
+        const assessments =  assessmentStore.getMemberAssessments()
+
+        const viewData = {
+
+            title: "Trainer Dashboard",
+
+            members: members,
+            memberassessments: assessments
+
+        }
+
+        response.render("admin", viewData);
     } ,
 
 
