@@ -15,8 +15,8 @@ const dashboardtrainer = {
         //const loggedInMember = accounts.getCurrentMember(request);
         const member = memberStore.getMemberById(request.params.id);
         const assessments = assessmentStore.getMemberAssessments(member.id);
-        const assessmentcount =  "hello there"
-            //assessments.length;
+        const assessmentcount = "hello there"
+        //assessments.length;
 
         const viewData = {
 
@@ -32,36 +32,45 @@ const dashboardtrainer = {
 
     },
 
-    addAssessmentComment (request, response)
-{
-    logger.info(request.params.id);
+    addAssessmentComment(request, response) {
+        logger.info(request.params.id);
 
-    const assessment = assessmentStore.getAssessment(request.params.id);
-    const newassessment = assessment;
-    const memberid = assessment.memberid;
-    const member =  memberStore.getMemberById(memberid);
-    const comments = request.body.comments;
-    logger.info(comments);
+        const assessment = assessmentStore.getAssessment(request.params.id);
+        const newassessment = assessment;
+        const memberid = assessment.memberid;
+        const member = memberStore.getMemberById(memberid);
+        const comments = request.body.comments;
+        logger.info(comments);
 
-    newassessment.trainerComment = comments;
-    logger.info(newassessment.trainerComment);
+        newassessment.trainerComment = comments;
+        logger.info(newassessment.trainerComment);
 
-    assessmentStore.removeAssessment(request.params.id);
-    assessmentStore.addAssessment(newassessment)
+        assessmentStore.removeAssessment(request.params.id);
+        assessmentStore.addAssessment(newassessment);
 
-    const assessments = assessmentStore.getMemberAssessments(memberid);
+        const assessments = assessmentStore.getMemberAssessments(memberid);
 
-    const viewData = {
+        const viewData = {
 
-        title: "Trainer Dashboard",
-        member: member,
-        memberassessments: assessments,
+            title: "Trainer Dashboard",
+            member: member,
+            memberassessments: assessments,
 
-    };
+        };
 
-    response.render("dashboardtrainer", viewData);
+        response.render("dashboardtrainer", viewData);
 
-},
+    },
+    deleteMember(request, repsonse){
+
+    const member = memberStore.getMemberById(id);
+if (member.assessmentcount = 0) {
+
+    memberStore.removeMember(id);
+    memberStore.save();
+}
+response.render("dashboardtrainer");
+} ,
 
 };
 

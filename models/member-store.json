@@ -32,7 +32,7 @@
       "bmi": 38.19444444444444,
       "bmicategory": "SEVERELY OBESE",
       "isidealbodyweight": false,
-      "assessmentcount": 3
+      "assessmentcount": 2
     },
     {
       "firstname": "Bart",
@@ -45,9 +45,9 @@
       "startingweight": "76",
       "BMI": 10,
       "bmiCategory": "SEVERELY UNDERWEIGHT",
-      "assessmentcount": 2,
+      "assessmentcount": 1,
       "id": "3c172699-30c2-40c8-976e-0024f26e9afc",
-      "bmi": 0.009777777777777778,
+      "bmi": 0.006044444444444444,
       "bmicategory": "SEVERELY UNDERWEIGHT",
       "isidealbodyweight": true
     }

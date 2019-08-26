@@ -37,6 +37,11 @@ const dashboard = {
         //const assessment = assessmentStore.getAssessment(id.assessmentId);
         logger.debug(`Deleting Assessment ${assessmentId}`);
         assessmentStore.removeAssessment(assessmentId);
+
+        //decrement the member count by one
+        const assessmentcount = loggedInMember.assessmentcount;
+        loggedInMember.assessmentcount = assessmentcount -1;
+
         response.redirect("/dashboard");
 
 
