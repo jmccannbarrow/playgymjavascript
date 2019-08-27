@@ -29,7 +29,7 @@
       "BMI": 78,
       "bmiCategory": "SEVERELY OBESE",
       "id": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
-      "bmi": 15.11111111111111,
+      "bmi": "15.11",
       "bmicategory": "SEVERELY UNDERWEIGHT",
       "isidealbodyweight": true,
       "assessmentcount": 4
