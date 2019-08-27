@@ -79,7 +79,7 @@ const dashboard = {
             upperArm: request.body.upperArm,
             waist: request.body.waist,
             hips: request.body.hips,
-            date: new Date().toLocaleString('en-GB'),
+            date: new Date().toGMTString('en-GB'),
             trainerComment: ""
         };
 

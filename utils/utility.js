@@ -10,7 +10,7 @@ const utility = {
     toTwoDecimalPlaces(num){
 
         //return (num * 100) / 100.0;
-        return 10;
+        //return 10;
 
     },
 
