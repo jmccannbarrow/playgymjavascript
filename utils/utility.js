@@ -7,13 +7,6 @@ const utility = {
 
 
 
-    toTwoDecimalPlaces(num){
-
-        //return (num * 100) / 100.0;
-        //return 10;
-
-    },
-
     calculateBMI(assessmentweight, memberheight) {
 
         //Returns the BMI for the member based on the calculation:

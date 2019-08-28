@@ -7,15 +7,15 @@
       "email": "homer@simpson.com",
       "password": "secret",
       "address": "Liverpool, UK",
-      "height": "1.2",
+      "height": "1.4",
       "startingweight": "175",
       "BMI": 10,
       "bmiCategory": "SEVERELY UNDERWEIGHT",
       "id": "78cfef9f-a6db-4c6b-b514-a0c4b57c1b5f",
-      "bmi": "34.72",
-      "bmicategory": "MODERATELY OBESE",
-      "isidealbodyweight": true,
-      "assessmentcount": 2
+      "bmi": "28.06",
+      "bmicategory": "OVERWEIGHT",
+      "isidealbodyweight": false,
+      "assessmentcount": 4
     },
     {
       "firstname": "John",
@@ -32,7 +32,7 @@
       "bmi": "20.00",
       "bmicategory": "NORMAL",
       "isidealbodyweight": true,
-      "assessmentcount": 4
+      "assessmentcount": 3
     }
   ]
 }

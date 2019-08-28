@@ -37,31 +37,31 @@
       "trainerComment": "well done Homer"
     },
     {
-      "id": "24352117-fe60-4dea-bbc2-c9d78e8f0456",
-      "memberid": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
-      "weight": "48",
-      "chest": "34",
-      "thigh": "34",
+      "id": "7fadc039-6d04-401c-a5d7-46889afcb726",
+      "memberid": "78cfef9f-a6db-4c6b-b514-a0c4b57c1b5f",
+      "weight": "45",
+      "chest": "23",
+      "thigh": "23",
       "upperArm": "34",
       "waist": "34",
       "hips": "34",
-      "date": "Wed, 28 Aug 2019 11:10:12 GMT",
-      "trainerComment": ""
+      "date": "Wed, 28 Aug 2019 16:09:41 GMT",
+      "trainerComment": "going well Homer"
     },
     {
-      "id": "b33fb7c9-68ae-402a-a74b-1b570254f645",
+      "id": "1f7065eb-0cf5-45e7-b02f-513248f501bf",
       "memberid": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
       "weight": "55",
       "chest": "45",
-      "thigh": "34",
+      "thigh": "23",
       "upperArm": "23",
       "waist": "34",
-      "hips": "34",
-      "date": "Wed, 28 Aug 2019 11:10:56 GMT",
-      "trainerComment": ""
+      "hips": "45",
+      "date": "Wed, 28 Aug 2019 16:10:48 GMT",
+      "trainerComment": "what happened?"
     },
     {
-      "id": "979cc62d-d473-4efb-8c9b-ae0d3baf6f27",
+      "id": "3bfba04b-ccf7-48e9-a1d0-8deffee5f0ac",
       "memberid": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
       "weight": "45",
       "chest": "45",
@@ -69,8 +69,20 @@
       "upperArm": "34",
       "waist": "34",
       "hips": "34",
-      "date": "Wed, 28 Aug 2019 11:11:09 GMT",
-      "trainerComment": ""
+      "date": "Wed, 28 Aug 2019 16:10:58 GMT",
+      "trainerComment": "thats better!"
+    },
+    {
+      "id": "bf28d5fd-678c-4bea-a3d3-089bec8c66c9",
+      "memberid": "78cfef9f-a6db-4c6b-b514-a0c4b57c1b5f",
+      "weight": "55",
+      "chest": "45",
+      "thigh": "23",
+      "upperArm": "23",
+      "waist": "45",
+      "hips": "34",
+      "date": "Wed, 28 Aug 2019 16:13:28 GMT",
+      "trainerComment": "try harder Homer!"
     }
   ]
 }

@@ -1,3 +1,4 @@
+/*
 "use strict";
 
 const accounts = require ('./accounts.js');
@@ -103,3 +104,4 @@ const assessment = {
 
 
 module.exports = assessment;
+*/
