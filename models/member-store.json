@@ -12,10 +12,10 @@
       "BMI": 10,
       "bmiCategory": "SEVERELY UNDERWEIGHT",
       "id": "78cfef9f-a6db-4c6b-b514-a0c4b57c1b5f",
-      "bmi": 31.25,
+      "bmi": "34.72",
       "bmicategory": "MODERATELY OBESE",
       "isidealbodyweight": true,
-      "assessmentcount": 1
+      "assessmentcount": 2
     },
     {
       "firstname": "John",
@@ -29,8 +29,8 @@
       "BMI": 78,
       "bmiCategory": "SEVERELY OBESE",
       "id": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
-      "bmi": "15.11",
-      "bmicategory": "SEVERELY UNDERWEIGHT",
+      "bmi": "20.00",
+      "bmicategory": "NORMAL",
       "isidealbodyweight": true,
       "assessmentcount": 4
     }

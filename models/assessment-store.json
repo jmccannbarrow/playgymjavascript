@@ -1,42 +1,6 @@
 {
   "assessmentCollection": [
     {
-      "id": "001360ab-ff6e-4875-9e90-6ea0820ad28f",
-      "memberid": "78cfef9f-a6db-4c6b-b514-a0c4b57c1b5f",
-      "weight": "45",
-      "chest": "45",
-      "thigh": "34",
-      "upperArm": "34",
-      "waist": "34",
-      "hips": "34",
-      "date": "8/26/2019, 5:59:22 PM",
-      "trainerComment": "come on"
-    },
-    {
-      "id": "073c6f87-0aac-43d8-8e25-3e86521dd46e",
-      "memberid": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
-      "weight": "100",
-      "chest": "23",
-      "thigh": "12",
-      "upperArm": "12",
-      "waist": "12",
-      "hips": "45",
-      "date": "8/26/2019, 11:37:22 PM",
-      "trainerComment": ""
-    },
-    {
-      "id": "eb641c72-1a55-4acc-b327-056261be7c3f",
-      "memberid": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
-      "weight": "100",
-      "chest": "23",
-      "thigh": "12",
-      "upperArm": "55",
-      "waist": "23",
-      "hips": "45",
-      "date": "8/26/2019, 11:37:07 PM",
-      "trainerComment": "well done"
-    },
-    {
       "id": "1715807f-1703-44c4-ae63-09918cb53b65",
       "memberid": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
       "weight": "34",
@@ -46,18 +10,66 @@
       "waist": "76",
       "hips": "87",
       "date": "Tue, 27 Aug 2019 20:37:50 GMT",
+      "trainerComment": "well done"
+    },
+    {
+      "id": "dd3b3730-d89c-484c-84c0-9d1f49203426",
+      "memberid": "78cfef9f-a6db-4c6b-b514-a0c4b57c1b5f",
+      "weight": "55",
+      "chest": "34",
+      "thigh": "23",
+      "upperArm": "23",
+      "waist": "23",
+      "hips": "23",
+      "date": "Wed, 28 Aug 2019 10:17:04 GMT",
+      "trainerComment": "must do better"
+    },
+    {
+      "id": "f9342499-5bed-47aa-b9b7-3affb2628a49",
+      "memberid": "78cfef9f-a6db-4c6b-b514-a0c4b57c1b5f",
+      "weight": "50",
+      "chest": "34",
+      "thigh": "23",
+      "upperArm": "34",
+      "waist": "34",
+      "hips": "34",
+      "date": "Wed, 28 Aug 2019 10:17:21 GMT",
+      "trainerComment": "well done Homer"
+    },
+    {
+      "id": "24352117-fe60-4dea-bbc2-c9d78e8f0456",
+      "memberid": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
+      "weight": "48",
+      "chest": "34",
+      "thigh": "34",
+      "upperArm": "34",
+      "waist": "34",
+      "hips": "34",
+      "date": "Wed, 28 Aug 2019 11:10:12 GMT",
       "trainerComment": ""
     },
     {
-      "id": "01387803-9240-47f5-93e0-75bc22aa70fa",
+      "id": "b33fb7c9-68ae-402a-a74b-1b570254f645",
       "memberid": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
-      "weight": "34",
-      "chest": "67",
-      "thigh": "67",
-      "upperArm": "67",
-      "waist": "67",
-      "hips": "67",
-      "date": "Tue, 27 Aug 2019 20:47:46 GMT",
+      "weight": "55",
+      "chest": "45",
+      "thigh": "34",
+      "upperArm": "23",
+      "waist": "34",
+      "hips": "34",
+      "date": "Wed, 28 Aug 2019 11:10:56 GMT",
+      "trainerComment": ""
+    },
+    {
+      "id": "979cc62d-d473-4efb-8c9b-ae0d3baf6f27",
+      "memberid": "af630aa1-eb22-4d7b-8519-24e4898fbbdb",
+      "weight": "45",
+      "chest": "45",
+      "thigh": "34",
+      "upperArm": "34",
+      "waist": "34",
+      "hips": "34",
+      "date": "Wed, 28 Aug 2019 11:11:09 GMT",
       "trainerComment": ""
     }
   ]

@@ -78,7 +78,9 @@
     <table class="ui celled table">
 {{#each memberassessments}}
         <thead>
-        <tr><th>Weight</th>
+        <tr>
+            <th>Date</th>
+            <th>Weight</th>
             <th>Chest</th>
             <th>Thigh</th>
             <th>Upper Arm</th>
@@ -94,6 +96,7 @@
 
             <tr>
 
+                <td><div class="ui item"> {{date}} </div></td>
                 <td><div class="ui item"> {{weight}} </div></td>
                 <td><div class="ui item"> {{chest}} </div></td>
                 <td><div class="ui item"> {{thigh}} </div></td>
