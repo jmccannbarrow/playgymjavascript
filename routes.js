@@ -9,7 +9,6 @@ const dashboard = require('./controllers/dashboard.js');
 const dashboardtrainer = require('./controllers/dashboardtrainer.js');
 const dashboardtrainerassessments = require('./controllers/dashboardtrainer.js');
 const about = require('./controllers/about.js');
-const assessment = require('./controllers/assessment.js');
 const admin = require('./controllers/admin.js');
 const utility = require("./utils/utility.js");
 
